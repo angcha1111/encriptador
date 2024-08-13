@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" type="image/x-icon" href="ruta/a/tu/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo__container">
+            <img src="assets/logo.png" alt="Encriptador logo" class="header__logo__image">
+            <h1 id="encriptador" class="header__title__text">Encriptador</h1>
+        </div>
+    </header>
+
+    <div class="main__container" role="main">
+        <div class="section__encrypt">
+            <h2 class="section__encrypt__subtitle">Espacio para el texto a encriptar</h2>
+            <textarea id="encryptInput" class="section__encrypt__input" placeholder="Escribe tu mensaje aquí"></textarea>
+            
+            <div class="section__encrypt__info">
+                <span class="section__encrypt__info__icon" aria-hidden="true">ℹ️</span>
+                <p>Usa solo letras minúsculas sin acentos.</p>
+            </div>
+            
+            <div class="section__encrypt__buttons">
+                <button class="section__encrypt__button__encrypt">Encriptar</button>
+                <button class="section__encrypt__button__decrypt">Desencriptar</button>
+                <button class="section__encrypt__button__clear">Limpiar</button>
+            </div>
+        </div>
+
+        <div class="section__result">
+            <img id="resultImage" src="assets/NoFound.png" alt="Imagen de resultado" class="section__result__image">
+            
+            <div id="resultMessage" class="section__result__message">
+                <h2 id="resultTitle" class="section__result__title">No hay mensaje aún</h2>
+                <p id="resultParagraph" class="section__result__paragraph">Ingresa un texto para encriptar o desencriptar.</p>
+            </div>
+            <button id="copyButton" class="section__result__button__copy" style="display: none;">Copiar</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Creado por Angie Chauta</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
